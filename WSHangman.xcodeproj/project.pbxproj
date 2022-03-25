@@ -7,36 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7564ED0F27EBAD9100FEAC73 /* WSHanglamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564ED0E27EBAD9100FEAC73 /* WSHanglamApp.swift */; };
-		7564ED1127EBAD9100FEAC73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564ED1027EBAD9100FEAC73 /* ContentView.swift */; };
-		7564ED1327EBAD9300FEAC73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7564ED1227EBAD9300FEAC73 /* Assets.xcassets */; };
-		7564ED1627EBAD9300FEAC73 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7564ED1527EBAD9300FEAC73 /* Preview Assets.xcassets */; };
-		7564ED1E27EBADA800FEAC73 /* WebSocketStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564ED1D27EBADA800FEAC73 /* WebSocketStream.swift */; };
-		7564ED2227EBB20D00FEAC73 /* WSHangmanGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564ED2127EBB20D00FEAC73 /* WSHangmanGameView.swift */; };
-		7564ED2427EBB23500FEAC73 /* WSHangmanGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564ED2327EBB23500FEAC73 /* WSHangmanGameViewModel.swift */; };
-		7564ED2827EBBC1F00FEAC73 /* WSMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564ED2727EBBC1F00FEAC73 /* WSMessage.swift */; };
-		7564ED2A27EC6C2800FEAC73 /* Limiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7564ED2927EC6C2800FEAC73 /* Limiter.swift */; };
-		756C1D4227ED02BF00C969CB /* ConnectionErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D4127ED02BF00C969CB /* ConnectionErrorView.swift */; };
-		756C1D4427EDC18100C969CB /* WSHangmanGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D4327EDC18100C969CB /* WSHangmanGame.swift */; };
-		756C1D4627EE058E00C969CB /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D4527EE058E00C969CB /* WelcomeView.swift */; };
-		756C1D4827EE112900C969CB /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D4727EE112900C969CB /* Settings.swift */; };
+		756C1D5C27EE409200C969CB /* WSHangmanGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D4B27EE409200C969CB /* WSHangmanGameViewModel.swift */; };
+		756C1D5D27EE409200C969CB /* Limiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D4D27EE409200C969CB /* Limiter.swift */; };
+		756C1D5E27EE409200C969CB /* WebSocketStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D4E27EE409200C969CB /* WebSocketStream.swift */; };
+		756C1D5F27EE409200C969CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756C1D4F27EE409200C969CB /* Assets.xcassets */; };
+		756C1D6027EE409200C969CB /* WSMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D5127EE409200C969CB /* WSMessage.swift */; };
+		756C1D6127EE409200C969CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756C1D5327EE409200C969CB /* Preview Assets.xcassets */; };
+		756C1D6227EE409200C969CB /* WSHangmanGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D5427EE409200C969CB /* WSHangmanGame.swift */; };
+		756C1D6327EE409200C969CB /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D5527EE409200C969CB /* Settings.swift */; };
+		756C1D6427EE409200C969CB /* WSHangmanGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D5727EE409200C969CB /* WSHangmanGameView.swift */; };
+		756C1D6527EE409200C969CB /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D5827EE409200C969CB /* WelcomeView.swift */; };
+		756C1D6627EE409200C969CB /* ConnectionErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D5927EE409200C969CB /* ConnectionErrorView.swift */; };
+		756C1D6727EE409200C969CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D5A27EE409200C969CB /* ContentView.swift */; };
+		756C1D6827EE409200C969CB /* WSHanglamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D5B27EE409200C969CB /* WSHanglamApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7564ED0B27EBAD9100FEAC73 /* WSHangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSHangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7564ED0E27EBAD9100FEAC73 /* WSHanglamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSHanglamApp.swift; sourceTree = "<group>"; };
-		7564ED1027EBAD9100FEAC73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7564ED1227EBAD9300FEAC73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7564ED1527EBAD9300FEAC73 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7564ED1D27EBADA800FEAC73 /* WebSocketStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketStream.swift; sourceTree = "<group>"; };
-		7564ED2127EBB20D00FEAC73 /* WSHangmanGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSHangmanGameView.swift; sourceTree = "<group>"; };
-		7564ED2327EBB23500FEAC73 /* WSHangmanGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSHangmanGameViewModel.swift; sourceTree = "<group>"; };
-		7564ED2727EBBC1F00FEAC73 /* WSMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSMessage.swift; sourceTree = "<group>"; };
-		7564ED2927EC6C2800FEAC73 /* Limiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Limiter.swift; sourceTree = "<group>"; };
-		756C1D4127ED02BF00C969CB /* ConnectionErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionErrorView.swift; sourceTree = "<group>"; };
-		756C1D4327EDC18100C969CB /* WSHangmanGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSHangmanGame.swift; sourceTree = "<group>"; };
-		756C1D4527EE058E00C969CB /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		756C1D4727EE112900C969CB /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		756C1D4B27EE409200C969CB /* WSHangmanGameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSHangmanGameViewModel.swift; sourceTree = "<group>"; };
+		756C1D4D27EE409200C969CB /* Limiter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Limiter.swift; sourceTree = "<group>"; };
+		756C1D4E27EE409200C969CB /* WebSocketStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketStream.swift; sourceTree = "<group>"; };
+		756C1D4F27EE409200C969CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		756C1D5127EE409200C969CB /* WSMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSMessage.swift; sourceTree = "<group>"; };
+		756C1D5327EE409200C969CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		756C1D5427EE409200C969CB /* WSHangmanGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSHangmanGame.swift; sourceTree = "<group>"; };
+		756C1D5527EE409200C969CB /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		756C1D5727EE409200C969CB /* WSHangmanGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSHangmanGameView.swift; sourceTree = "<group>"; };
+		756C1D5827EE409200C969CB /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		756C1D5927EE409200C969CB /* ConnectionErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionErrorView.swift; sourceTree = "<group>"; };
+		756C1D5A27EE409200C969CB /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		756C1D5B27EE409200C969CB /* WSHanglamApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSHanglamApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 		7564ED0227EBAD9100FEAC73 = {
 			isa = PBXGroup;
 			children = (
-				7564ED0D27EBAD9100FEAC73 /* WSHanglam */,
+				756C1D4927EE409200C969CB /* WSHangman */,
 				7564ED0C27EBAD9100FEAC73 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,64 +66,64 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7564ED0D27EBAD9100FEAC73 /* WSHanglam */ = {
+		756C1D4927EE409200C969CB /* WSHangman */ = {
 			isa = PBXGroup;
 			children = (
-				7564ED0E27EBAD9100FEAC73 /* WSHanglamApp.swift */,
-				7564ED2627EBBBC800FEAC73 /* Models */,
-				7564ED1C27EBAD9800FEAC73 /* Network */,
-				7564ED2027EBB06B00FEAC73 /* ViewModels */,
-				7564ED1F27EBB06500FEAC73 /* Views */,
-				7564ED1027EBAD9100FEAC73 /* ContentView.swift */,
-				7564ED1227EBAD9300FEAC73 /* Assets.xcassets */,
-				7564ED1427EBAD9300FEAC73 /* Preview Content */,
-				756C1D4327EDC18100C969CB /* WSHangmanGame.swift */,
-				756C1D4727EE112900C969CB /* Settings.swift */,
+				756C1D4A27EE409200C969CB /* ViewModels */,
+				756C1D4C27EE409200C969CB /* Network */,
+				756C1D4F27EE409200C969CB /* Assets.xcassets */,
+				756C1D5027EE409200C969CB /* Models */,
+				756C1D5227EE409200C969CB /* Preview Content */,
+				756C1D5427EE409200C969CB /* WSHangmanGame.swift */,
+				756C1D5527EE409200C969CB /* Settings.swift */,
+				756C1D5627EE409200C969CB /* Views */,
+				756C1D5A27EE409200C969CB /* ContentView.swift */,
+				756C1D5B27EE409200C969CB /* WSHanglamApp.swift */,
 			);
-			path = WSHanglam;
+			path = WSHangman;
 			sourceTree = "<group>";
 		};
-		7564ED1427EBAD9300FEAC73 /* Preview Content */ = {
+		756C1D4A27EE409200C969CB /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				7564ED1527EBAD9300FEAC73 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		7564ED1C27EBAD9800FEAC73 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				7564ED1D27EBADA800FEAC73 /* WebSocketStream.swift */,
-				7564ED2927EC6C2800FEAC73 /* Limiter.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		7564ED1F27EBB06500FEAC73 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				7564ED2127EBB20D00FEAC73 /* WSHangmanGameView.swift */,
-				756C1D4127ED02BF00C969CB /* ConnectionErrorView.swift */,
-				756C1D4527EE058E00C969CB /* WelcomeView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		7564ED2027EBB06B00FEAC73 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				7564ED2327EBB23500FEAC73 /* WSHangmanGameViewModel.swift */,
+				756C1D4B27EE409200C969CB /* WSHangmanGameViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		7564ED2627EBBBC800FEAC73 /* Models */ = {
+		756C1D4C27EE409200C969CB /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				7564ED2727EBBC1F00FEAC73 /* WSMessage.swift */,
+				756C1D4D27EE409200C969CB /* Limiter.swift */,
+				756C1D4E27EE409200C969CB /* WebSocketStream.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		756C1D5027EE409200C969CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				756C1D5127EE409200C969CB /* WSMessage.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		756C1D5227EE409200C969CB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				756C1D5327EE409200C969CB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		756C1D5627EE409200C969CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				756C1D5727EE409200C969CB /* WSHangmanGameView.swift */,
+				756C1D5827EE409200C969CB /* WelcomeView.swift */,
+				756C1D5927EE409200C969CB /* ConnectionErrorView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,8 +184,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7564ED1627EBAD9300FEAC73 /* Preview Assets.xcassets in Resources */,
-				7564ED1327EBAD9300FEAC73 /* Assets.xcassets in Resources */,
+				756C1D6127EE409200C969CB /* Preview Assets.xcassets in Resources */,
+				756C1D5F27EE409200C969CB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,17 +196,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7564ED1127EBAD9100FEAC73 /* ContentView.swift in Sources */,
-				756C1D4227ED02BF00C969CB /* ConnectionErrorView.swift in Sources */,
-				7564ED2827EBBC1F00FEAC73 /* WSMessage.swift in Sources */,
-				7564ED2A27EC6C2800FEAC73 /* Limiter.swift in Sources */,
-				7564ED2227EBB20D00FEAC73 /* WSHangmanGameView.swift in Sources */,
-				756C1D4627EE058E00C969CB /* WelcomeView.swift in Sources */,
-				7564ED1E27EBADA800FEAC73 /* WebSocketStream.swift in Sources */,
-				7564ED2427EBB23500FEAC73 /* WSHangmanGameViewModel.swift in Sources */,
-				756C1D4427EDC18100C969CB /* WSHangmanGame.swift in Sources */,
-				756C1D4827EE112900C969CB /* Settings.swift in Sources */,
-				7564ED0F27EBAD9100FEAC73 /* WSHanglamApp.swift in Sources */,
+				756C1D6327EE409200C969CB /* Settings.swift in Sources */,
+				756C1D6227EE409200C969CB /* WSHangmanGame.swift in Sources */,
+				756C1D5D27EE409200C969CB /* Limiter.swift in Sources */,
+				756C1D6527EE409200C969CB /* WelcomeView.swift in Sources */,
+				756C1D6027EE409200C969CB /* WSMessage.swift in Sources */,
+				756C1D5E27EE409200C969CB /* WebSocketStream.swift in Sources */,
+				756C1D6727EE409200C969CB /* ContentView.swift in Sources */,
+				756C1D6427EE409200C969CB /* WSHangmanGameView.swift in Sources */,
+				756C1D6627EE409200C969CB /* ConnectionErrorView.swift in Sources */,
+				756C1D6827EE409200C969CB /* WSHanglamApp.swift in Sources */,
+				756C1D5C27EE409200C969CB /* WSHangmanGameViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,7 +336,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LastWordWins/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WSHangman/Preview Content\"";
 				DEVELOPMENT_TEAM = W63RPFLVSJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -365,7 +365,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"LastWordWins/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WSHangman/Preview Content\"";
 				DEVELOPMENT_TEAM = W63RPFLVSJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

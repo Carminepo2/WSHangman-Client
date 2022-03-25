@@ -1,6 +1,6 @@
 //
 //  WebSocketStream.swift
-//  LastWordWins
+//  WSHangman
 //
 //  Created by Carmine Porricelli on 23/03/22.
 //
@@ -22,7 +22,7 @@ class WebSocketStream: AsyncSequence {
     // We also need to specify associated type of the AsyncIterator, which will be an AsyncThrowingStream.Iterator as the stream can potentially error out while listening to the WebSocket.
     typealias AsyncIterator = AsyncThrowingStream<URLSessionWebSocketTask.Message, Error>.Iterator
     
-    private lazy var logger = Logger(subsystem: "developer.academy.LastWordWins.WebSocketStream", category: "WebSocketStream")
+    private lazy var logger = Logger(subsystem: "developer.academy.WSHangman.WebSocketStream", category: "WebSocketStream")
     private lazy var jsonDecoder = JSONDecoder()
     private lazy var jsonEncoder = JSONEncoder()
     

@@ -1,6 +1,6 @@
 //
 //  WSHangmanGameView.swift
-//  LastWordWins
+//  WSHangman
 //
 //  Created by Carmine Porricelli on 23/03/22.
 //

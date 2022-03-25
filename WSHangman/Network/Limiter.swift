@@ -1,6 +1,6 @@
 //
 //  Limiter.swift
-//  LastWordWins
+//  WSHangman
 //
 //  Created by Carmine Porricelli on 24/03/22.
 //
