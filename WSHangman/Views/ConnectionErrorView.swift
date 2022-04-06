@@ -22,6 +22,7 @@ struct ConnectionErrorView: View {
             
             Button("Reconnect") {
                 viewModel.wsHangmanGame = WSHangmanGameViewModel.createWSHangmanGame()
+                viewModel.connectionError = false
             }
             .buttonStyle(.borderedProminent)
             .padding(.top)

@@ -26,14 +26,19 @@ class WebSocketStream: AsyncSequence {
     private lazy var jsonDecoder = JSONDecoder()
     private lazy var jsonEncoder = JSONEncoder()
     
+    private let url: URL
+    private let session: URLSession
     private var stream: AsyncThrowingStream<Element, Error>?
+    
     private var continuation: AsyncThrowingStream<Element, Error>.Continuation?
-    private let socket: URLSessionWebSocketTask
+    private var socket: URLSessionWebSocketTask
     private var pingTimer: Timer?
     
     // The initializer takes in a url string and a URLSession object which we use to build a URLSessionWebSocketTask to listen and process web socket messages.
     init(url: URL, session: URLSession = URLSession.shared) {
         
+        self.session = session
+        self.url = url
         socket = session.webSocketTask(with: url)
         
         stream = AsyncThrowingStream { continuation in
@@ -105,6 +110,10 @@ class WebSocketStream: AsyncSequence {
                 print(error)
             }
         }
+    }
+    
+    func reconnect() {
+        self.socket = session.webSocketTask(with: url)
     }
     
 }

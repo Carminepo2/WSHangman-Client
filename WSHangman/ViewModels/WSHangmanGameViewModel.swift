@@ -6,12 +6,20 @@
 //
 
 import Foundation
+import SwiftUI
 
-class WSHangmanGameViewModel: ObservableObject {
-    @Published var currentWinner: WSMessage? = nil
+class WSHangmanGameViewModel: ObservableObject, WSHangmanGameDelegate {
+    @Published var wsHangmanGame: WSHangmanGame!
+    
+    @Published var lastGuesses = Array<String>()
+    @Published var wsGameState: WSGameState?
     @Published var guess = ""
     @Published var connectionError = false
-    @Published var wsHangmanGame = createWSHangmanGame()
+    
+    init() {
+        self.wsHangmanGame = WSHangmanGameViewModel.createWSHangmanGame()
+        self.wsHangmanGame.delegate = self
+    }
     
     static func createWSHangmanGame() -> WSHangmanGame {
         let id = UserDefaults.standard.string(forKey: "id")
@@ -25,10 +33,38 @@ class WSHangmanGameViewModel: ObservableObject {
         }
     }
     
-    
-    // MARK: - User Intents
+}
+
+// MARK: - User Intents
+extension WSHangmanGameViewModel {
     func sendGuess() {
-        wsHangmanGame.submitGuess("Try")
+        guard wsGameState?.wordToGuess.count == self.guess.count else { return }
+        
+        wsHangmanGame.submitGuess(self.guess.lowercased())
+        self.guess = ""
+    }
+}
+
+
+// MARK: - Delegate Functions
+extension WSHangmanGameViewModel {
+    func didReceiveGameStateResponse(_ message: WSGameState) {
+        self.wsGameState = message
+        
+        withAnimation {
+            if lastGuesses.count > 3 {
+                lastGuesses.removeLast()
+            }
+            
+            if let lastGuess = message.lastGuess {
+                lastGuesses.insert(lastGuess, at: 0)
+            }
+        }
     }
     
+    func didConnectionStopped() {
+        connectionError = true
+    }
 }
+
+

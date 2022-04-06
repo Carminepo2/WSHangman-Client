@@ -8,29 +8,33 @@
 import Foundation
 import UIKit
 
+protocol WSHangmanGameDelegate {
+    func didReceiveGameStateResponse(_ message: WSGameState)
+    func didConnectionStopped()
+}
+
 class WSHangmanGame: WebSocketStream {
     
-    private(set) var guesses = Array<String>()
-    var connectionError = false
     let player: Player
-    
     
     init(player: Player) {
         self.player = player
         
         var wsUrlComponents = URLComponents()
         wsUrlComponents.scheme = "wss"
-        wsUrlComponents.host = "last-word-wins-backend.herokuapp.com"
-        wsUrlComponents.path = "/start"
+        wsUrlComponents.host = Settings.wsHost
+        wsUrlComponents.path = Settings.wsPath
         wsUrlComponents.queryItems = [
             URLQueryItem(name: "playerId", value: player.id),
+            URLQueryItem(name: "username", value: player.username),
         ]
         
         super.init(url: wsUrlComponents.url!)
         self.startListeningForGuesses()
     }
     
-    private lazy var throttler = Limiter(policy: .throttle, duration: 2)
+    var delegate: WSHangmanGameDelegate?
+    private lazy var throttler = Limiter(policy: .throttle, duration: Settings.throttleDuration)
     
     func startListeningForGuesses() {
         self.ping()
@@ -38,18 +42,21 @@ class WSHangmanGame: WebSocketStream {
             do {
                 for try await message in self {
                     switch message {
-                    case .data(let messageData):
-                        
-                        guard let decodedWinner = try? JSONDecoder().decode(WSMessage.self, from: messageData) else { return }
-                        self.guesses.append("Test")
-                        
+                    case .data(let response):
+                        guard let gameStateResponse = try? JSONDecoder().decode(WSGameState.self, from: response) else { return }
+                        print(gameStateResponse)
+                        DispatchQueue.main.async {
+                            self.delegate?.didReceiveGameStateResponse(gameStateResponse)
+                        }
                     default:
                         fatalError("Wrong response from the server: \(message)")
                     }
                     
                 }
             } catch {
-                connectionError = true
+                DispatchQueue.main.async {
+                    self.delegate?.didConnectionStopped()
+                }
             }
         }
     }
@@ -58,12 +65,11 @@ class WSHangmanGame: WebSocketStream {
         Task {
             await throttler.submit {
                 await self.sendMessage(
-                    data: WSMessage(text: guess, user: "Pippo")
+                    data: WSPlayerGuess(playerId: UUID(uuidString: self.player.id)!, guess: guess)
                 )
             }
         }
     }
-    
     
     struct Player: Identifiable, Codable {
         var id: String

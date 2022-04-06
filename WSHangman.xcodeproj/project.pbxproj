@@ -11,7 +11,7 @@
 		756C1D5D27EE409200C969CB /* Limiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D4D27EE409200C969CB /* Limiter.swift */; };
 		756C1D5E27EE409200C969CB /* WebSocketStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D4E27EE409200C969CB /* WebSocketStream.swift */; };
 		756C1D5F27EE409200C969CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756C1D4F27EE409200C969CB /* Assets.xcassets */; };
-		756C1D6027EE409200C969CB /* WSMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D5127EE409200C969CB /* WSMessage.swift */; };
+		756C1D6027EE409200C969CB /* WSPlayerGuess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D5127EE409200C969CB /* WSPlayerGuess.swift */; };
 		756C1D6127EE409200C969CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756C1D5327EE409200C969CB /* Preview Assets.xcassets */; };
 		756C1D6227EE409200C969CB /* WSHangmanGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D5427EE409200C969CB /* WSHangmanGame.swift */; };
 		756C1D6327EE409200C969CB /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D5527EE409200C969CB /* Settings.swift */; };
@@ -20,6 +20,7 @@
 		756C1D6627EE409200C969CB /* ConnectionErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D5927EE409200C969CB /* ConnectionErrorView.swift */; };
 		756C1D6727EE409200C969CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D5A27EE409200C969CB /* ContentView.swift */; };
 		756C1D6827EE409200C969CB /* WSHanglamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D5B27EE409200C969CB /* WSHanglamApp.swift */; };
+		756C1D6A27EE5BE900C969CB /* WSGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756C1D6927EE5BE900C969CB /* WSGameState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +29,7 @@
 		756C1D4D27EE409200C969CB /* Limiter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Limiter.swift; sourceTree = "<group>"; };
 		756C1D4E27EE409200C969CB /* WebSocketStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketStream.swift; sourceTree = "<group>"; };
 		756C1D4F27EE409200C969CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		756C1D5127EE409200C969CB /* WSMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSMessage.swift; sourceTree = "<group>"; };
+		756C1D5127EE409200C969CB /* WSPlayerGuess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSPlayerGuess.swift; sourceTree = "<group>"; };
 		756C1D5327EE409200C969CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		756C1D5427EE409200C969CB /* WSHangmanGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSHangmanGame.swift; sourceTree = "<group>"; };
 		756C1D5527EE409200C969CB /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -37,6 +38,7 @@
 		756C1D5927EE409200C969CB /* ConnectionErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionErrorView.swift; sourceTree = "<group>"; };
 		756C1D5A27EE409200C969CB /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		756C1D5B27EE409200C969CB /* WSHanglamApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSHanglamApp.swift; sourceTree = "<group>"; };
+		756C1D6927EE5BE900C969CB /* WSGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSGameState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,14 +71,13 @@
 		756C1D4927EE409200C969CB /* WSHangman */ = {
 			isa = PBXGroup;
 			children = (
-				756C1D4A27EE409200C969CB /* ViewModels */,
-				756C1D4C27EE409200C969CB /* Network */,
 				756C1D4F27EE409200C969CB /* Assets.xcassets */,
-				756C1D5027EE409200C969CB /* Models */,
 				756C1D5227EE409200C969CB /* Preview Content */,
-				756C1D5427EE409200C969CB /* WSHangmanGame.swift */,
-				756C1D5527EE409200C969CB /* Settings.swift */,
+				756C1D5027EE409200C969CB /* Models */,
+				756C1D4C27EE409200C969CB /* Network */,
 				756C1D5627EE409200C969CB /* Views */,
+				756C1D4A27EE409200C969CB /* ViewModels */,
+				756C1D5527EE409200C969CB /* Settings.swift */,
 				756C1D5A27EE409200C969CB /* ContentView.swift */,
 				756C1D5B27EE409200C969CB /* WSHanglamApp.swift */,
 			);
@@ -103,7 +104,9 @@
 		756C1D5027EE409200C969CB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				756C1D5127EE409200C969CB /* WSMessage.swift */,
+				756C1D5427EE409200C969CB /* WSHangmanGame.swift */,
+				756C1D5127EE409200C969CB /* WSPlayerGuess.swift */,
+				756C1D6927EE5BE900C969CB /* WSGameState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,10 +203,11 @@
 				756C1D6227EE409200C969CB /* WSHangmanGame.swift in Sources */,
 				756C1D5D27EE409200C969CB /* Limiter.swift in Sources */,
 				756C1D6527EE409200C969CB /* WelcomeView.swift in Sources */,
-				756C1D6027EE409200C969CB /* WSMessage.swift in Sources */,
+				756C1D6027EE409200C969CB /* WSPlayerGuess.swift in Sources */,
 				756C1D5E27EE409200C969CB /* WebSocketStream.swift in Sources */,
 				756C1D6727EE409200C969CB /* ContentView.swift in Sources */,
 				756C1D6427EE409200C969CB /* WSHangmanGameView.swift in Sources */,
+				756C1D6A27EE5BE900C969CB /* WSGameState.swift in Sources */,
 				756C1D6627EE409200C969CB /* ConnectionErrorView.swift in Sources */,
 				756C1D6827EE409200C969CB /* WSHanglamApp.swift in Sources */,
 				756C1D5C27EE409200C969CB /* WSHangmanGameViewModel.swift in Sources */,
