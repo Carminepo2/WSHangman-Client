@@ -17,15 +17,13 @@ struct ConnectionErrorView: View {
             Image(systemName: "exclamationmark.icloud.fill")
                 .font(.title)
                 .foregroundStyle(.tertiary)
+            
             Text("Connection Error.")
                 .font(.headline)
             
-            Button("Reconnect") {
-                viewModel.wsHangmanGame = WSHangmanGameViewModel.createWSHangmanGame()
-                viewModel.connectionError = false
-            }
-            .buttonStyle(.borderedProminent)
-            .padding(.top)
+            Text("Please restart the app.")
+                .padding(.top)
+                .foregroundStyle(.secondary)
         }
     }
 }

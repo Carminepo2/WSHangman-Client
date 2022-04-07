@@ -17,9 +17,7 @@ import Foundation
 
 class WebSocketStream: AsyncSequence {
     
-    // The protocol AsyncSequence requires us to specify the output element of the sequence which in this case is a URLSessionWebSocketTask.Message (the message received from the websocket)
     typealias Element = URLSessionWebSocketTask.Message
-    // We also need to specify associated type of the AsyncIterator, which will be an AsyncThrowingStream.Iterator as the stream can potentially error out while listening to the WebSocket.
     typealias AsyncIterator = AsyncThrowingStream<URLSessionWebSocketTask.Message, Error>.Iterator
     
     private lazy var logger = Logger(subsystem: "developer.academy.WSHangman.WebSocketStream", category: "WebSocketStream")
